@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/LeoRamos111/calculadora-tmb/main/img/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card-calculo {
+    background-color: rgb(225, 238, 223);
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 25px 70px 25px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-calculo p {
+    margin-top: 10px;
+    text-align: center;
+}
+.card-calculo span {
+    font-size: 14px;
+    color: grey;
+    font-weight: 400;
+}
+.card-calculo h1 {
+    color: rgb(43, 78, 26);
+    border-bottom: 2px solid rgb(170, 170, 170);
+    padding-bottom: 5px;
+}
+.card-calculo label{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(37, 37, 37);
+}
+.card-calculo input{
+    border: 2px solid rgb(43, 78, 26);
+    width: 70%;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.card-calculo input::placeholder {
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+}
+.card-calculo input:focus, input:valid {
+    background-color: rgb(228, 226, 226);
+    text-align: center;
+
+}
+.card-calculo #calcular{
+    padding: 12px 24px;
+    background-color: rgb(129, 194, 31);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+#genero {
+    margin-top: 20px;
+}
+  
+.gender-buttons {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+  
+.gender-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: lightgray;
+    border: none;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+  
+.gender-button:focus {
+    outline: none;
+}
+  
+#female-button.selected {
+    background-color: rgb(240, 64, 93);
+    color: white;
+}
+  
+#male-button.selected {
+    background-color: blue;
+    color: white;
+}
+
+
+@media (max-width: 785px) {
+
+    body {
+        background-image: none;
+        background-color: rgb(225, 238, 223);
+    }
+    .card-calculo {
+        width: 100%;
+        box-shadow: none;
+        
+    }
+    .card-calculo p{
+        font-size: 14px;
+    }
+    .card-calculo h1{
+        font-size: 28px;
+
+    }
+    .card-calculo label{
+        font-size: 20px;
+        margin-bottom: 3px;
+
+    }
+    .card-calculo #genero {
+        font-size: 19px;
+    }
+
+    .card-calculo .gender-buttons {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+
+
+
